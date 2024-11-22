@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel the World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="container-fluid bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="Images/Logo.jpg" alt="Travel the World Logo" class="img-fluid" style="max-height: 40px; margin-right: 10px;">
+                    <span>Travel the World</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com">Facebook</a>
+                        </li>
+                
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="image-container">
+        <img src="Images/header.jpg" alt="Header" class="img-fluid mb-3">
+    </div>
+
+    <main class="container my-5">
+        <h1>Individual Backpacking Trips</h1>
+    
+        <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                <div class="content-box">
+                    <h2>Argentina</h2>
+                    <p>Traveling in Argentina offers stunning diversity, from Patagonia’s glaciers to Iguazú Falls. 
+                    Travel is easy with long-distance buses connecting cities like Buenos Aires and Mendoza. 
+                    Affordable hostels, rich culture, and local cuisine like empanadas make it a backpacker’s dream.</p>
+                    <div class="image-container">
+                        <img src="Images/Argentina.jpg" alt="Argentina" class="img-fluid mb-3">
+                    </div>
+                </div>
+            </div>
+    
+                <div class="col-12 col-md-6 col-lg-4">
+                <div class="content-box">
+                    <h2>Germany</h2>
+                    <p>Germany offers diverse landscapes, from the Alps to the Wadden Sea, and efficient transport links for easy travel. 
+                    Explore cities like Berlin and Munich or hike the Black Forest and Rhine trails. 
+                    Hostels, campsites, and regional cuisine make it a backpacker-friendly destination.</p>
+                    <div class="image-container">
+                        <img src="Images/Germany.jpg" alt="Germany" class="img-fluid mb-3">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="content-box">
+                    <h2>Colombia</h2>
+                    <p>Backpacking in Colombia offers diverse experiences, from stunning Caribbean beaches to the Andes and Amazon. 
+                    Cities like Bogotá and Medellín blend culture, colores and history. 
+                    Affordable hostels, vibrant festivals, and local treats like arepas make it a must-visit destination.</p>
+                    <div class="image-container">
+                        <img src="Images/Colombia.jpg" alt="Colombia" class="img-fluid mb-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Plan your individual travel route</h1>
+        <p>With the help of our informative blogs and personalized travel planner, you have everything you need to design your own unique and unforgettable travel itinerary in the destination of your choice. Our blogs provide detailed insights, expert tips, and inspiration to help you discover hidden gems and must-see attractions, while our individual travel planner allows you to tailor every aspect of your trip to your preferences. Whether you're seeking adventure, relaxation, or cultural experiences, we are here to make your dream journey a reality. Contact us for more information and start planning the trip of a lifetime!</p>
+    </main>
+
+    <div class="d-flex justify-content-center align-items-center" style="height: 50vh;">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+            Open Contact Form
+        </button>
+    </div>
+
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                            <div class="invalid-feedback">Please enter a message.</div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="container-fluid bg-dark text-light py-3 text-center">
+        <p>&copy; 2024 Travel the World. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script> 
+
+</body>
+</html>
